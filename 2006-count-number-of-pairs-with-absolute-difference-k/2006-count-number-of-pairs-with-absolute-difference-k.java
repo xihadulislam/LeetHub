@@ -3,7 +3,7 @@ class Solution {
         int cnt = 0;
 
             for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j <=i; j++) {
+            for (int j = i+1; j <nums.length; j++) {
                 int sum = nums[i] - nums[j];
                     if(sum<0) sum*=-1;
                   if (  sum == k) cnt++;
