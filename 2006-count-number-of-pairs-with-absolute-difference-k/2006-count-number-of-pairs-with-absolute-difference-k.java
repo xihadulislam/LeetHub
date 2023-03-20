@@ -4,7 +4,9 @@ class Solution {
 
             for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j <=i; j++) {
-                  if (  Math.abs(nums[i] - nums[j]) == k) cnt++;
+                int sum = nums[i] - nums[j];
+                    if(sum<0) sum*=-1;
+                  if (  sum == k) cnt++;
               //  System.out.println(nums[j]+"  --j");
             }
 
