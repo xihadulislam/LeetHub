@@ -1,11 +1,11 @@
 class Solution {
     public int[][] sortTheStudents(int[][] score, int k) {
         
-          return selectionSort(score, k);
+          return bubbleSort(score, k);
         
     }
     
-        int[][] selectionSort(int[][] score, int k) {
+        int[][] bubbleSort(int[][] score, int k) {
 
         for (int i = 0; i < score.length - 1; i++) {
             
